@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/actionUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/gray"
+        android:text="UP"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/actionDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/gray"
+        android:text="DOWN"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/actionLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="95dp"
+        android:layout_toLeftOf="@+id/actionRight"
+        android:backgroundTint="@color/gray"
+        android:text="LEFT"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/actionRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="95dp"
+        android:backgroundTint="@color/gray"
+        android:text="RIGHT"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="102dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="251dp">
+
+        <ImageView
+            android:id="@+id/image_left"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/img_arrow_left"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/img_arrow_right"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_up"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/img_arrow_up"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_down"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/img_arrow_down"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>
